@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form method="post" >
+<form method="post">
     <div>
         <label>Username</label>
         <input type="text" name="username" >
@@ -28,9 +28,6 @@
     </div>
 </form>
 
-<div th:unless="${user.getPassword().equals(verify)}" >
-    <p th:replace="fragments :: error" ></p>
-</div>
 
 </body>
 </html>
